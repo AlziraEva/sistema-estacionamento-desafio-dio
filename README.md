@@ -4,7 +4,7 @@
 ![status](https://img.shields.io/badge/status-%20concluido-green)
 
 ## 📝Sobre o Projeto
- Foi criado um **Sistema de estacionamento** com o intuito de facilitar o gerenciamento dos veiculos fazendo a implementação de um menu interativo com: Listagem dos veiculos que se encontram estacionados, registro de sua entrada e saida e encerramento do menu. Adicionado um sistema de cálculo ao remover o veiculo do sistema, para exibir o valor total do que foi cobrado, incluindo a taxa inicial ao entrar no estacionamento e acrescentando o valor do tempo (horas) em que o veiculos se encontra estacionado.
+ Foi criado um **Sistema de estacionamento** com o intuito de facilitar o gerenciamento dos veículos fazendo a implementação de um menu interativo com: Listagem dos veículos que se encontram estacionados, registro de sua entrada e saída e encerramento do menu. Adicionado um sistema de cálculo ao remover o veículo do sistema, para exibir o valor total do que foi cobrado, incluindo a taxa inicial ao entrar no estacionamento e acrescentando o valor do tempo (horas) em que o veículo se encontra estacionado.
 
 ## 🔄 Funcionalidades
 
