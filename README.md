@@ -8,9 +8,9 @@
 
 ## 🔄 Funcionalidades
 
-- Listar todos os veiculos
-- Adicionar veiculo
-- Remover veiculo
+- Listar todos os veículos
+- Adicionar veículo
+- Remover veículo
 - Exibir valor cobrado
 
 
