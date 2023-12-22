@@ -1,38 +1,54 @@
-# DIO - Trilha .NET - Fundamentos
-www.dio.me
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de fundamentos, da trilha .NET da DIO.
+# Sistema de Estacionamento 🚗 
 
-## Contexto
-Você foi contratado para construir um sistema para um estacionamento, que será usado para gerenciar os veículos estacionados e realizar suas operações, como por exemplo adicionar um veículo, remover um veículo (e exibir o valor cobrado durante o período) e listar os veículos.
+![status](https://img.shields.io/badge/status-%20concluido-green)
 
-## Proposta
-Você precisará construir uma classe chamada "Estacionamento", conforme o diagrama abaixo:
-![Diagrama de classe estacionamento](diagrama_classe_estacionamento.png)
+## 📝Sobre o Projeto
+ Foi criado um **Sistema de estacionamento** com o intuito de facilitar o gerenciamento dos veiculos fazendo a implementação de um menu interativo com: Listagem dos veiculos que se encontram estacionados, registro de sua entrada e saida e encerramento do menu. Adicionado um sistema de cálculo ao remover o veiculo do sistema, para exibir o valor total do que foi cobrado, incluindo a taxa inicial ao entrar no estacionamento e acrescentando o valor do tempo (horas) em que o veiculos se encontra estacionado.
 
-A classe contém três variáveis, sendo:
+## 🔄 Funcionalidades
 
-**precoInicial**: Tipo decimal. É o preço cobrado para deixar seu veículo estacionado.
-
-**precoPorHora**: Tipo decimal. É o preço por hora que o veículo permanecer estacionado.
-
-**veiculos**: É uma lista de string, representando uma coleção de veículos estacionados. Contém apenas a placa do veículo.
-
-A classe contém três métodos, sendo:
-
-**AdicionarVeiculo**: Método responsável por receber uma placa digitada pelo usuário e guardar na variável **veiculos**.
-
-**RemoverVeiculo**: Método responsável por verificar se um determinado veículo está estacionado, e caso positivo, irá pedir a quantidade de horas que ele permaneceu no estacionamento. Após isso, realiza o seguinte cálculo: **precoInicial** * **precoPorHora**, exibindo para o usuário.
-
-**ListarVeiculos**: Lista todos os veículos presentes atualmente no estacionamento. Caso não haja nenhum, exibir a mensagem "Não há veículos estacionados".
-
-Por último, deverá ser feito um menu interativo com as seguintes ações implementadas:
-1. Cadastrar veículo
-2. Remover veículo
-3. Listar veículos
-4. Encerrar
+- Listar todos os veiculos
+- Adicionar veiculo
+- Remover veiculo
+- Exibir valor cobrado
 
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+## ⚙Tecnologias e Linguagens Utilizadas
+<div>
+<img align="center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" 
+title="C#"  width="50" height="50"/>
+<img align="center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" 
+title=".Net"  width="50" height="50"/>
+<img align="center" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" 
+title="Git" width="50" height="50"/>
+</div>          
+
+## 🤝Contribuindo
+
+
+1. Faça um fork deste repositório
+
+2. Crie uma branch para sua feature:
+
+```
+    git checkout -b feature/nova-feature
+```
+3. Faça commit das suas alterações:
+
+```
+    git commit -m Adiciona nova feature
+```
+    
+4. Envie as alterações para o seu fork:
+
+```     
+    git push origin feature/nova-feature
+``` 
+ 
+5. Abra um pull request neste repositório
+
+## 👩‍💻Autores
+
+- [Alzira Eva](https://github.com/AlziraEva)👩
+
