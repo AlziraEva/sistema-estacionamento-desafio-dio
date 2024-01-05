@@ -1,3 +1,5 @@
+using System.Text.RegularExpressions;
+
 namespace DesafioFundamentos.Models
 {
     public class Estacionamento
@@ -14,9 +16,22 @@ namespace DesafioFundamentos.Models
 
         public void AdicionarVeiculo()
         {
+
             Console.WriteLine("Digite a placa do veículo para estacionar:");
             string placa = Console.ReadLine();
-            veiculos.Add(placa);
+
+            string placaPadrao = @"^[A-Z]{3}\d{4}$";
+
+            if (Regex.IsMatch(placa, placaPadrao))
+            {
+                veiculos.Add(placa);
+                Console.WriteLine("Veiculo cadastrado com sucesso.");
+
+            }
+            else
+            {
+                Console.WriteLine("A placa precisa ter um formato valido.");
+            }
 
         }
 

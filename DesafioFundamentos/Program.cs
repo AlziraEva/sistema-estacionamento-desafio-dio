@@ -6,12 +6,25 @@ Console.OutputEncoding = System.Text.Encoding.UTF8;
 decimal precoInicial = 0;
 decimal precoPorHora = 0;
 
-Console.WriteLine("Seja bem vindo ao sistema de estacionamento!\n" +
-                  "Digite o preço inicial:");
-precoInicial = Convert.ToDecimal(Console.ReadLine());
+ValidacoesPreco validacao = new ValidacoesPreco();
 
-Console.WriteLine("Agora digite o preço por hora:");
-precoPorHora = Convert.ToDecimal(Console.ReadLine());
+do
+{
+    Console.WriteLine("Seja bem vindo ao sistema de estacionamento!\n" +
+                  "Digite o preço inicial:");
+    validacao.CapturarPreco(Console.ReadLine());
+    precoInicial = validacao.preco;
+}
+while (precoInicial == 0);
+
+
+do
+{
+    Console.WriteLine("Agora digite o preço por hora:");
+    validacao.CapturarPreco(Console.ReadLine());
+    precoPorHora = validacao.preco;
+}
+while (precoPorHora == 0);
 
 Estacionamento estacionamento = new Estacionamento(precoInicial, precoPorHora);
 
@@ -50,7 +63,7 @@ while (exibirMenu)
             break;
     }
 
-    Console.WriteLine("Pressione uma tecla para continuar");
+    Console.WriteLine("Pressione a tecla 'ENTER' para continuar");
     Console.ReadLine();
 }
 
